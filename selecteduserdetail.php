@@ -9,53 +9,32 @@ if(isset($_POST['submit']))
 
     $sql = "SELECT * from users where id=$from";
     $query = mysqli_query($conn,$sql);
-    $sql1 = mysqli_fetch_array($query); // returns array or output of user from which the amount is to be transferred.
-
+    $sql1 = mysqli_fetch_array($query); 
     $sql = "SELECT * from users where id=$to";
     $query = mysqli_query($conn,$sql);
     $sql2 = mysqli_fetch_array($query);
-
-
-
-    // constraint to check input of negative value by user
     if (($amount)<0)
    {
         echo '<script type="text/javascript">';
-        echo ' alert("Oops! Negative values cannot be transferred")';  // showing an alert box.
+        echo ' alert("Oops! Negative values cannot be transferred")';
         echo '</script>';
     }
-
-
-  
-    // constraint to check insufficient balance.
     else if($amount > $sql1['balance']) 
     {
         
         echo '<script type="text/javascript">';
-        echo ' alert("Bad Luck! Insufficient Balance")';  // showing an alert box.
+        echo ' alert("Bad Luck! Insufficient Balance")';
         echo '</script>';
     }
-    
-
-
-    // constraint to check zero values
     else if($amount == 0){
-
          echo "<script type='text/javascript'>";
          echo "alert('Oops! Zero value cannot be transferred')";
          echo "</script>";
      }
-
-
     else {
-        
-                // deducting amount from sender's account
                 $newbalance = $sql1['balance'] - $amount;
                 $sql = "UPDATE users set balance=$newbalance where id=$from";
                 mysqli_query($conn,$sql);
-             
-
-                // adding amount to reciever's account
                 $newbalance = $sql2['balance'] + $amount;
                 $sql = "UPDATE users set balance=$newbalance where id=$to";
                 mysqli_query($conn,$sql);
