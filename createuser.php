@@ -32,13 +32,13 @@
   include 'navbar.php';
 ?>
 
-        <h2 class="text-center pt-4">Create a User</h2>
+        <h2 class="text-center pt-4" style="color: black;">Create a User</h2>
         <br>
 
-  <div class="background">
+  <div class="background" style="color: black;">
   <div class="container">
     <div class="screen">
-      <div class="screen-header">
+      <div class="screen-header" style="background-color: #323637;">
         <div class="screen-header-right">
           <div class="screen-header-ellipsis"></div>
           <div class="screen-header-ellipsis"></div>

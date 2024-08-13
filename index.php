@@ -24,14 +24,14 @@
                 </div>
               </div>
               <div class="col-sm-12 col-md img text-center">
-                <img src="img/bank.png" class="img-fluid pt-2">
+                <img src="img/bank2.png" class="img-fluid pt-2" style="width: 382px; height: 280px ">
               </div>
             </div>
             <div class="row activity text-center">
                   <div class="col-md act">
                     <img src="img/user.jpg" class="img-fluid">
                     <br>
-                    <a href="createuser.php"><button>Create a User</button></a>
+                    <a href="createuser.php" ><button>Create a User</button></a>
                   </div>
                   <div class="col-md act">
                     <img src="img/transfer.jpg" class="img-fluid">
