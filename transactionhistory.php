@@ -16,7 +16,7 @@
 ?>
 
 	<div class="container">
-        <h2 class="text-center pt-4">Transaction History</h2>
+        <h2 class="text-center pt-4" style="color: black;">Transaction History</h2>
         
        <br>
        <div class="table-responsive-sm">

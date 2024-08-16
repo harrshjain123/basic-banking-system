@@ -47,7 +47,7 @@
       </div>
       <div class="screen-body">
         <div class="screen-body-item left">
-          <img class="img-fluid" src="img/user3.jpg" style="border: none; border-radius: 50%;">
+          <img class="img-fluid" src="img/user4.png" style="border: none; border-radius: 50%;width: 300px; margin-left: 10px;" >
         </div>
         <div class="screen-body-item">
           <form class="app-form" method="post">
@@ -62,8 +62,13 @@
             </div>
             <br>
             <div class="app-form-group button">
-              <input class="app-form-button" type="submit" value="CREATE" name="submit"></input>
-              <input class="app-form-button" type="reset" value="RESET" name="reset"></input>
+              <input class="app-form-button" type="submit" value="CREATE" name="submit" style="background-color: #323637; padding: 8px; border-radius: 20px; color:#fff; font-size:large; " onmouseover="this.style.color='black';" 
+              onmouseout="this.style.color='#fff';"></input>
+              <input class="app-form-button" type="reset" value="RESET" name="reset" 
+              style="background-color: #323637; padding: 8px; border-radius: 20px; color:#fff; font-size:large;"  
+              onmouseover="this.style.color='black';" 
+              onmouseout="this.style.color='#fff';">
+
             </div>
           </form>
         </div>
